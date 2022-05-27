@@ -1,0 +1,57 @@
+body,
+html {
+  font-family: "Roboto", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.conteudo-pag {
+  margin-top: -5%;
+  align-items: center;
+  display: flex;
+}
+
+#div-parte1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("imagens/sessoes/sessao_um/fundo-sessao-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  #logo-projeto {
+    border-radius: 100%;
+    width: 150%;
+    height: 15vh;
+  }
+}
+
+@media (max-width: 991px) {
+  #logo-projeto {
+    border-radius: 100%;
+    width: 100%;
+    height: 10vh;
+  }
+}
+
+/* Style the footer */
+footer {
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  padding-top: 2%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
