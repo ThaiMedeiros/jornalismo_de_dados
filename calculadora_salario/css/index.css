@@ -23,6 +23,22 @@ a {
   background-size: cover;
 }
 
+#texto-1 > p {
+  font-size: 2vw;
+  text-align: center;
+  padding: 4%;
+}
+
+#img-1 {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../imagens/sessoes/sessao_um/pessoa-sessao-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 5%;
+}
+
 @media (min-width: 992px) {
   #logo-projeto {
     border-radius: 100%;
