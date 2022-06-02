@@ -1,10 +1,38 @@
-body,
-html {
-  font-family: "Roboto", sans-serif !important;
+/* ---------- IMPORTAÇÃO DE FONTES ---------- */
+
+@font-face {
+  font-family: "Linotte-Bold";
+  src: url("../fonts/Linotte\ Bold.otf");
 }
+
+@font-face {
+  font-family: "Linotte-Heavy";
+  src: url("../fonts/Linotte\ Heavy.otf");
+}
+
+@font-face {
+  font-family: "Linotte-Light";
+  src: url("../fonts/Linotte\ Light.otf");
+}
+
+@font-face {
+  font-family: "Linotte-Regular";
+  src: url("../fonts/Linotte\ Regular.otf");
+}
+
+@font-face {
+  font-family: "Linotte-Semi-Bold";
+  src: url("../fonts/Linotte\ Semi\ Bold.otf");
+}
+
+/* ---------- PÁGINA ---------- */
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
 
 .conteudo-pag {
@@ -16,6 +44,15 @@ a {
 .container {
   width: 100vw;
   height: 100vh;
+}
+
+.col-sm-12 {
+  flex: auto !important;
+}
+
+/* ---------- Parte 1 ---------- */
+
+#parte1{
   background-image: url("../imagens/sessoes/sessao_um/fundo-sessao-1.png");
   background-repeat: no-repeat;
   /* background-position: center center; */
@@ -24,28 +61,33 @@ a {
   background-color: #C53F3F;
 }
 
-#quadro1 {
+#quadro {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-#texto-1 {
+.textos {
+  font-family: "Linotte-Light";
   background-color: #C53F3F;
   width: 100%;
-  height: 50vh;
-  padding: 10%;
+  color: white;
   display: table-cell;
   vertical-align: middle;
   display: flex;
   align-items: center;
-  border-radius: 4em;  
 }
 
-#texto-1 > p {
-  font-size: 3vh;
-  color: white;
+#texto1 {
+  height: 40vh;
+  border-radius: 4em;
+}
+
+#p1 {
+  padding: 10%;
+  text-align: center;
+  margin: 0 !important;
 }
 
 #img-1 {
@@ -58,11 +100,124 @@ a {
   margin-bottom: 5%;
 }
 
+/* ---------- Parte 2 ---------- */
+
+#img-1-sessao2{
+  width: 100%;
+  height: 25vh;
+  background-image: url("../imagens/sessoes/sessao_dois/pessoa-um-sessao-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 5%;
+}
+
+#img-2-sessao2{
+  width: 100%;
+  height: 25vh;
+  background-image: url("../imagens/sessoes/sessao_dois/pessoa-dois-sessao-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 5%;
+}
+
+#img-3-sessao2{
+  width: 100%;
+  height: 25vh;
+  background-image: url("../imagens/sessoes/sessao_dois/pessoa-tres-sessao-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 5%;
+}
+
+#texto2 {
+  height: 20vh;
+  border-radius: 1em;
+  text-align: center;
+}
+
+#p2 {
+  padding: 5%;
+  text-align: center;
+  margin: 0 !important;
+}
+
+/* ---------- Parte 3 ---------- */
+
+#parte3 {
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 5%;
+}
+
+#circulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFC100;
+  border-radius: 100%;
+}
+
+#texto1-part3 {
+  width: 100%;
+  height: 70vh;
+  font-family: "Linotte-Bold";
+  color: black;
+  display: table-cell;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+#p3 {
+  padding: 10%;
+  text-align: center;
+  margin: 0 !important;
+}
+
+#img-1-part3 {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../imagens/sessoes/sessao_tres/pessoa-um-sessao-3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  align-self: center;
+}
+
+#parte4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
 @media (min-width: 992px) {
   #logo-projeto {
     border-radius: 100%;
     width: 150%;
     height: 15vh;
+  }
+
+  #mudar_ordem {
+    flex-direction: initial;
+  }
+  
+  #p1 {
+    font-size: 1.2em;
+  }
+
+  #p2 {
+    font-size: 1em;
+  }
+
+  #p3 {
+    font-size: 1.8vw;
   }
 }
 
@@ -71,6 +226,22 @@ a {
     border-radius: 100%;
     width: 100%;
     height: 10vh;
+  }
+
+  #mudar_ordem {
+    flex-direction: column-reverse;
+  }
+
+  #p1 {
+    font-size: 1em;
+  }
+
+  #p2 {
+    font-size: 0.7em;
+  }
+
+  #p3 {
+    font-size: 1em;
   }
 }
 
@@ -81,6 +252,7 @@ footer {
   bottom: 0;
   left: 0;
   padding-top: 2%;
+  font-family: "Linotte-Light";
 }
 
 a {
